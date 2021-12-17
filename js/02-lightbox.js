@@ -1,5 +1,5 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
+
 const containerEl = document.querySelector('.gallery');
 
 const markup = galleryItems
@@ -17,7 +17,7 @@ const markup = galleryItems
     .join('');
 containerEl.insertAdjacentHTML('afterbegin', markup);
 
-const gallery = new simpleLightbox('.gallery__item a');
-gallery.on('show.simpleLightbox', function() {
+const gallery = new SimpleLightbox('.gallery__item a');
+gallery.on('show.simplelightbox', function() {
 
 });
